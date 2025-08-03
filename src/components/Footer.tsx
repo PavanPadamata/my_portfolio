@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
 import { useLanguage } from '../hooks/useLanguage';
 import { portfolioData } from '../data/portfolio';
 
@@ -11,7 +12,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/pavanpadamata', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/pavanpadamata', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://x.com/pavanpadamata', label: 'Twitter' },
+    { icon: FaXTwitter, href: 'https://x.com/pavanpadamata', label: 'Twitter' },
     { icon: Mail, href: 'mailto:pavanpadmata2002@gmail.com', label: 'Email' }
   ];
 

@@ -19,13 +19,11 @@ export const portfolioData = {
         text: "Pavan played a critical role in our infrastructure setup. His approach to automation and deployment was impressive. I'd highly recommend him for any DevOps work.",
         author: "Esau Gozalo"
       },
-      certifications: 'Certifications',
-      certList: [
-        'AWS Certified Cloud Practitioner',
-        'AWS Academy Cloud Foundations & Cloud Architecting',
-        'Docker for Absolute Beginners – Udemy',
-        'AWS DevOps Engineer Professional'
-      ],
+      fiverr: {
+        title: 'Available on Fiverr',
+        description: 'Check out my DevOps services and gigs on Fiverr for quick project delivery.',
+        link: 'https://fiverr.com/pavanpadamata'
+      },
       techStack: 'Tech Stack'
     },
     projects: {
@@ -80,9 +78,8 @@ export const portfolioData = {
       title: 'Let\'s Work Together',
       subtitle: 'Ready to streamline your development workflow?',
       email: 'pavanpadmata2002@gmail.com',
-      phone: '+91 97049 29063',
       whatsapp: 'Chat on WhatsApp',
-      telegram: '@pavanpadamata',
+      telegram: '@pavan_padamata',
       twitter: '@pavanpadamata'
     },
     footer: {
@@ -111,13 +108,11 @@ export const portfolioData = {
         text: "Pavan jugó un papel crítico en la configuración de nuestra infraestructura. Su enfoque hacia la automatización y despliegue fue impresionante. Lo recomendaría altamente para cualquier trabajo DevOps.",
         author: "Esau Gozalo"
       },
-      certifications: 'Certificaciones',
-      certList: [
-        'AWS Certified Cloud Practitioner',
-        'AWS Academy Cloud Foundations & Cloud Architecting',
-        'Docker for Absolute Beginners – Udemy',
-        'AWS DevOps Engineer Professional'
-      ],
+      fiverr: {
+        title: 'Disponible en Fiverr',
+        description: 'Revisa mis servicios DevOps y gigs en Fiverr para entrega rápida de proyectos.',
+        link: 'https://fiverr.com/pavanpadamata'
+      },
       techStack: 'Stack Tecnológico'
     },
     projects: {
@@ -172,9 +167,8 @@ export const portfolioData = {
       title: 'Trabajemos Juntos',
       subtitle: '¿Listo para optimizar tu flujo de desarrollo?',
       email: 'pavanpadmata2002@gmail.com',
-      phone: '+91 97049 29063',
       whatsapp: 'Chat en WhatsApp',
-      telegram: '@pavanpadamata',
+      telegram: '@pavan_padamata',
       twitter: '@pavanpadamata'
     },
     footer: {
@@ -189,8 +183,8 @@ export const techStack = {
   'CI/CD': ['GitHub Actions', 'GitLab CI', 'Jenkins'],
   'Containers': ['Docker', 'Docker Compose'],
   'Orchestration': ['Kubernetes'],
-  'Infrastructure as Code': ['Terraform (basic)'],
-  'Cloud Platforms': ['AWS (EKS, ECS, RDS, S3, EC2, IAM)', 'GCP (basic)', 'Cloudflare DNS'],
+  'Infrastructure as Code': ['Terraform'],
+  'Cloud Platforms': ['AWS (EKS, ECS, RDS, S3, EC2, IAM)', 'GCP', 'Cloudflare DNS'],
   'Monitoring & Security': ['UFW', 'Fail2Ban'],
   'Scripting': ['Python', 'Boto3', 'Bash', 'Shell Scripting'],
   'Version Control': ['Git', 'GitHub'],

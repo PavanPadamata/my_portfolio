@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MessageCircle, Send, Twitter } from 'lucide-react';
+import { Mail, MessageCircle, Send } from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
 import { useLanguage } from '../hooks/useLanguage';
 import { portfolioData } from '../data/portfolio';
 
@@ -17,13 +18,6 @@ const Contact = () => {
       color: 'text-red-600'
     },
     {
-      icon: Phone,
-      label: 'Phone',
-      value: data.phone,
-      href: `tel:${data.phone}`,
-      color: 'text-green-600'
-    },
-    {
       icon: MessageCircle,
       label: data.whatsapp,
       value: data.whatsapp,
@@ -38,7 +32,7 @@ const Contact = () => {
       color: 'text-blue-500'
     },
     {
-      icon: Twitter,
+      icon: FaXTwitter,
       label: 'Twitter',
       value: data.twitter,
       href: `https://x.com/pavanpadamata`,
@@ -65,7 +59,7 @@ const Contact = () => {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid md:grid-cols-2 gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

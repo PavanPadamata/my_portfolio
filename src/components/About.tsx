@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Code, Server, Quote } from 'lucide-react';
+import { Code, Server, Quote } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
 import { portfolioData, techStack } from '../data/portfolio';
 
@@ -70,28 +70,29 @@ const About = () => {
               </div>
             </motion.div>
 
-            <div className="mb-8">
-              <div className="flex items-center gap-2 mb-4">
-                <Award className="text-blue-600 dark:text-blue-400" size={24} />
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  {data.certifications}
-                </h3>
-              </div>
-              <ul className="space-y-2">
-                {data.certList.map((cert, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-center gap-2 text-gray-700 dark:text-gray-300"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <div className="w-2 h-2 bg-blue-600 rounded-full" />
-                    {cert}
-                  </motion.li>
-                ))}
-              </ul>
+            <motion.div
+              className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-lg border-l-4 border-green-600"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {data.fiverr.title}
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-3">
+                {data.fiverr.description}
+              </p>
+              <motion.a
+                href={data.fiverr.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View Fiverr Profile
+              </motion.a>
             </div>
           </motion.div>
 
