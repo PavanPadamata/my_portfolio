@@ -93,7 +93,7 @@ const About = () => {
               >
                 View Fiverr Profile
               </motion.a>
-            </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
