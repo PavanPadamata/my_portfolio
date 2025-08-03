@@ -111,7 +111,7 @@ export const portfolioData = {
       fiverr: {
         title: 'Disponible en Fiverr',
         description: 'Revisa mis servicios DevOps y gigs en Fiverr para entrega rápida de proyectos.',
-        link: 'https://fiverr.com/pavanpadamata'
+        link: 'https://fiverr.com/pavanpadmata'
       },
       techStack: 'Stack Tecnológico'
     },
