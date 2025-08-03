@@ -110,29 +110,93 @@ const About = () => {
               </h3>
             </div>
             
-            <div className="space-y-6">
-              {Object.entries(techStack).map(([category, tools], categoryIndex) => (
-                <motion.div
-                  key={category}
-                  variants={itemVariants}
-                  className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 p-4 rounded-lg border border-gray-200 dark:border-gray-600"
-                >
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                    {category}
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {tools.map((tool, toolIndex) => (
-                      <span
-                        key={toolIndex}
-                        className="px-2 py-1 bg-white dark:bg-gray-600 text-gray-700 dark:text-gray-200 text-xs rounded-md"
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            <motion.div
+              variants={itemVariants}
+              className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600"
+            >
+              <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4">
+                {/* DevOps Tools */}
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Docker</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Kubernetes</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Terraform</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">AWS</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">GCP</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">GitHub</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab CI" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">GitLab</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Jenkins</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Python</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Bash</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">NGINX</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Ubuntu</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Linux</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Git</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://www.svgrepo.com/show/448271/cloudflare.svg" alt="Cloudflare" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">Cloudflare</span>
+                </div>
+                
+                <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
+                  <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="API Testing" className="w-8 h-8 mb-1" />
+                  <span className="text-xs text-gray-700 dark:text-gray-200">APIs</span>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
