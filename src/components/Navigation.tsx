@@ -27,7 +27,7 @@ const Navigation = () => {
             className="font-bold text-xl text-gray-900 dark:text-white"
             whileHover={{ scale: 1.05 }}
           >
-            Pavan
+            Pavan Padamata
           </motion.div>
           
           <div className="hidden md:flex space-x-8">
