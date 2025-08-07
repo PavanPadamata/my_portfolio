@@ -78,9 +78,8 @@ export const portfolioData = {
       title: 'Let\'s Work Together',
       subtitle: 'Ready to streamline your development workflow?',
       email: 'pavanpadmata2002@gmail.com',
-      whatsapp: 'Chat on WhatsApp',
       telegram: '@pavan_padamata',
-      twitter: '@pavanpadamata'
+      twitter: '@pavanpadamata1'
     },
     footer: {
       builtWith: 'Built with ❤️ by',
@@ -167,9 +166,8 @@ export const portfolioData = {
       title: 'Trabajemos Juntos',
       subtitle: '¿Listo para optimizar tu flujo de desarrollo?',
       email: 'pavanpadmata2002@gmail.com',
-      whatsapp: 'Chat en WhatsApp',
       telegram: '@pavan_padamata',
-      twitter: '@pavanpadamata'
+      twitter: '@pavanpadamata1'
     },
     footer: {
       builtWith: 'Construido con ❤️ por',

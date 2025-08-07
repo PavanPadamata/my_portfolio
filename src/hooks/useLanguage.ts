@@ -14,6 +14,8 @@ export const useLanguage = () => {
     const newLanguage: Language = language === 'en' ? 'es' : 'en';
     setLanguage(newLanguage);
     localStorage.setItem('language', newLanguage);
+    // Force re-render by updating the state immediately
+    window.location.reload();
   };
 
   return { language, toggleLanguage };

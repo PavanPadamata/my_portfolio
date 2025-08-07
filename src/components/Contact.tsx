@@ -18,13 +18,6 @@ const Contact = () => {
       color: 'text-red-600'
     },
     {
-      icon: MessageCircle,
-      label: data.whatsapp,
-      value: data.whatsapp,
-      href: `https://wa.me/919704929063`,
-      color: 'text-green-500'
-    },
-    {
       icon: Send,
       label: 'Telegram',
       value: data.telegram,
@@ -35,7 +28,7 @@ const Contact = () => {
       icon: FaXTwitter,
       label: 'Twitter',
       value: data.twitter,
-      href: `https://x.com/pavanpadamata`,
+      href: `https://x.com/pavanpadamata1`,
       color: 'text-blue-400'
     }
   ];
@@ -59,7 +52,7 @@ const Contact = () => {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-2 gap-6"
+          className="grid md:grid-cols-3 gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

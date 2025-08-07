@@ -86,6 +86,7 @@ const Hero = () => {
               className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 flex items-center gap-2"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('https://github.com/pavanpadamata/pavanpadamata/blob/main/resume.pdf', '_blank')}
             >
               <Download size={20} />
               Resume

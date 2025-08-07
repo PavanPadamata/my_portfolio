@@ -12,7 +12,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/pavanpadamata', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/pavanpadamata', label: 'LinkedIn' },
-    { icon: FaXTwitter, href: 'https://x.com/pavanpadamata', label: 'Twitter' },
+    { icon: FaXTwitter, href: 'https://x.com/pavanpadamata1', label: 'Twitter' },
     { icon: Mail, href: 'mailto:pavanpadmata2002@gmail.com', label: 'Email' }
   ];
 

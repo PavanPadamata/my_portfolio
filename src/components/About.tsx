@@ -132,7 +132,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" className="w-8 h-8 mb-1" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" className="w-8 h-8 mb-1" />
                   <span className="text-xs text-gray-700 dark:text-gray-200">AWS</span>
                 </div>
                 
@@ -187,7 +187,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex flex-col items-center p-2 bg-white dark:bg-gray-600 rounded-lg hover:scale-105 transition-transform">
-                  <img src="https://www.svgrepo.com/show/448271/cloudflare.svg" alt="Cloudflare" className="w-8 h-8 mb-1" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare" className="w-8 h-8 mb-1" />
                   <span className="text-xs text-gray-700 dark:text-gray-200">Cloudflare</span>
                 </div>
                 
