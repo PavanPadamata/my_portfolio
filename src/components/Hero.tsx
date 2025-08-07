@@ -86,7 +86,14 @@ const Hero = () => {
               className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 flex items-center gap-2"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.open('https://github.com/PavanPadamata/my_portfolio/blob/main/Pavan_Padamata_Resume.pdf', '_blank')}
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = 'https://github.com/PavanPadamata/my_portfolio/raw/main/Pavan_Padamata_Resume.pdf';
+                link.download = 'Pavan_Padamata_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
             >
               <Download size={20} />
               Resume
