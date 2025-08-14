@@ -3,6 +3,7 @@ export const portfolioData = {
     nav: {
       about: 'About',
       projects: 'Projects',
+      blog: 'Blog',
       services: 'Services',
       contact: 'Contact'
     },
@@ -91,6 +92,7 @@ export const portfolioData = {
     nav: {
       about: 'Acerca de',
       projects: 'Proyectos',
+      blog: 'Blog',
       services: 'Servicios',
       contact: 'Contacto'
     },
