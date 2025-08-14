@@ -35,6 +35,18 @@
   @apply bg-transparent p-0;
 }
 
+.prose table {
+  @apply w-full border-collapse border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden;
+}
+
+.prose th {
+  @apply border border-gray-300 dark:border-gray-600 px-4 py-2 bg-gray-100 dark:bg-gray-800 font-semibold;
+}
+
+.prose td {
+  @apply border border-gray-300 dark:border-gray-600 px-4 py-2;
+}
+
 .prose ul {
   @apply list-disc list-inside mb-4;
 }
